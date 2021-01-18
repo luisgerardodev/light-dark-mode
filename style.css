@@ -45,6 +45,7 @@ section {
 h1 {
   font-family: Kaushan Script, sans-serif;
   font-size: 100px;
+  text-align: center;
   margin-bottom: 0;
 }
 
@@ -256,4 +257,70 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  /* Navigation */
+  #nav {
+    display: none;
+  }
+
+  /* About Section */
+  .about-container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .image-container {
+    margin: 10px 0;
+  }
+
+  img {
+    height: 250px;
+    width: 250px;
+  }
+
+  /* Projects Section */
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  button {
+    margin: 10px 0;
+  }
+
+  .text-box {
+    width: 77%;
+  }
+
+  /* Contact Section */
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .fab {
+    font-size: 80px;
+    margin: 10px;
+  }
+  /* Dark Mode Toggle */
+  .theme-switch-wrapper {
+    position: absolute;
+  }
 }
